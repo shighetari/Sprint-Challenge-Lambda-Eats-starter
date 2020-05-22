@@ -157,7 +157,10 @@ export default function Form(props) {
                 <div >
                     
                     <textarea
-                    // value={values.instructions}
+                    type= 'text'
+                    name='instructions'
+                    value={values.instructions}
+                    onChange={validateChange}
                      placeholder='special instructions go here'
                    /> 
                 </div>

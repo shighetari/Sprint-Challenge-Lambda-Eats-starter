@@ -19,6 +19,7 @@ function App() {
   size: '',
   sauce: '',
   toppings: '',
+  instructions: '',
   }
  const initialOrder = []
  const initialFormState = {
@@ -174,23 +175,26 @@ useEffect(() => {
       { order.map(order => {
           return ( 
             <div key = {order.id}> 
-            <h3> {order.name} </h3>
-            <h3> {order.size} </h3>
-            <h3> {order.sauce} </h3>
+            <h2> {order.name} </h2>
+            <h4> {order.size} </h4>
+            <h4> {order.sauce} </h4>
+            
             {/* <h3> {order.toppings} </h3> */}
 
             {
         !!order.toppings && !!order.toppings.length &&
         <div>
-          toppings:
+          <h4> toppings:</h4>
           <ul>
             {order.toppings.map((like, idx) => 
             <li key={idx}>
               {like}</li>)}
           </ul>
         </div>
+        
       }
-
+      <div> Special instruction </div>
+      <h4>  {order.instructions} </h4>
 
             </div> 
           )
