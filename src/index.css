@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  color: white;
+  
+}
+
+.homeDiv {
+  z-index: 100;
+  position: absolute;
+  margin: 0 auto;
+  top: 35%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+}
+.homeButton {
+  margin: 0 auto;
+      font-size: 1.5rem;
+      border-radius: 11px;
+      width: 13%;
+      color: white;
+      background-color: lightblue;
+}
+
+
+.homeH2 {
+  font-size: 5rem;
+}
+
+li {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+  margin-right: 25px;
+  text-decoration: none;
+  
+ 
+}
+.pizza-img {
+  margin-top: 5px;
+  width: 100%;
+}

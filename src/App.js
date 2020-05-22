@@ -133,17 +133,17 @@ useEffect(() => {
   return (
     <>
   
-      <nav> 
+     
+  <nav> 
 
-      <h1>Lambda Eats</h1>
-      <li> 
+<h1> </h1>
+<li> 
+<Link to='/'>Home</Link>
+  
+<Link to='/pizza'>Order</Link>
 
-      <Link to='/'>Home</Link>
-      <Link to='/pizza'>Order</Link>
-      </li>
-      </nav>
-   
-        
+</li>
+</nav>
       <Switch>
         
         
@@ -202,7 +202,7 @@ useEffect(() => {
 
         }
           )}
-
+ 
     </>
   );
 };
